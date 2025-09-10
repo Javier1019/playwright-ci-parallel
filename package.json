@@ -1,0 +1,29 @@
+{
+  "name": "playwright-ci-parallel",
+  "version": "1.0.0",
+  "description": "Playwright tests with parallel execution in GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "install:browsers": "playwright install"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "ci",
+    "github-actions",
+    "parallel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
