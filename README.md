@@ -2,7 +2,7 @@
 
 A complete setup for running Playwright tests in parallel across multiple browsers using GitHub Actions.
 
-## 🚀 Features
+## Features
 
 - **Parallel Test Execution**: Tests run simultaneously across multiple browsers
 - **Multi-Browser Support**: Chromium, Firefox, WebKit, Chrome, Edge, and mobile browsers
@@ -10,12 +10,12 @@ A complete setup for running Playwright tests in parallel across multiple browse
 - **Comprehensive Reporting**: HTML, JSON, and JUnit test reports
 - **Artifact Storage**: Test reports and screenshots saved for 30 days
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 18 or higher
 - npm or yarn package manager
 
-## 🛠️ Setup
+## Setup
 
 1. **Clone the repository**
    ```bash
@@ -33,7 +33,7 @@ A complete setup for running Playwright tests in parallel across multiple browse
    npm run install:browsers
    ```
 
-## 🧪 Running Tests
+## Running Tests
 
 ### Local Development
 
@@ -71,7 +71,7 @@ npx playwright test --project="Google Chrome"
 npx playwright test --project="Microsoft Edge"
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Playwright Configuration (`playwright.config.js`)
 
@@ -87,7 +87,7 @@ The configuration includes:
 - **Desktop**: Chromium, Firefox, WebKit, Chrome, Edge
 - **Mobile**: Chrome (Pixel 5), Safari (iPhone 12)
 
-## 🚀 GitHub Actions Workflow
+## GitHub Actions Workflow
 
 The CI pipeline (`/.github/workflows/playwright.yml`) includes:
 
@@ -110,7 +110,7 @@ The CI pipeline (`/.github/workflows/playwright.yml`) includes:
 - **Timeout Protection**: 60-minute timeout per job
 - **Node.js Caching**: Faster dependency installation
 
-## 📊 Test Reports
+## Test Reports
 
 After running tests, you'll find:
 
@@ -119,7 +119,7 @@ After running tests, you'll find:
 - **JUnit Report**: CI/CD integration format
 - **Artifacts**: Available in GitHub Actions for 30 days
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 playwright-ci-parallel/
@@ -134,7 +134,7 @@ playwright-ci-parallel/
 └── README.md                       # This file
 ```
 
-## 🎯 Sample Tests
+## Sample Tests
 
 The repository includes sample tests demonstrating:
 
@@ -142,7 +142,7 @@ The repository includes sample tests demonstrating:
 - **API Testing**: HTTP requests, response validation, error handling
 - **Cross-Browser**: Tests that work across all supported browsers
 
-## 🔍 Debugging
+## Debugging
 
 ### Local Debugging
 
@@ -160,7 +160,7 @@ npx playwright test --project=chromium --debug
 - Download test artifacts to view screenshots and videos
 - Review HTML reports for interactive debugging
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Push to GitHub**: Once you push this repository to GitHub, the CI pipeline will automatically run on every commit.
 
@@ -168,7 +168,7 @@ npx playwright test --project=chromium --debug
 
 3. **Download Reports**: Click on any workflow run to download test artifacts and reports.
 
-## 📝 Customization
+## Customization
 
 ### Adding New Tests
 
@@ -192,7 +192,7 @@ Edit `.github/workflows/playwright.yml` to:
 - Change artifact retention
 - Add deployment steps
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -200,6 +200,6 @@ Edit `.github/workflows/playwright.yml` to:
 4. Push and create a pull request
 5. The CI pipeline will automatically test your changes
 
-## 📄 License
+## License
 
-MIT License - feel free to use this setup in your own projects!
+MIT License - feel free to use this setup in your own projects.
